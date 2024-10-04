@@ -147,3 +147,11 @@ transition: 100ms;
   align-self: flex-end;  
 }
 
+footer {
+ margin-top: 2em;
+ margin-left: 2em;
+ color: #f6d8e1;
+ opacity: 70%;
+}
+
+
