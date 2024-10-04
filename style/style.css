@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  background-color: #0c0c0e;
+   color: rgb(255, 255, 255);
+ 
+  }
+
+div {
+margin-left: 1em;
+}
+header, footer, main{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  align-items: center;
+}
+header {
+padding: 0.5em 0 1em;
+}
+
+.logo img {
+  transition: filter 0.3s ease-in-out; 
+}
+
+.logo img:hover {
+  filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.8)); 
+}
+
+.topnav {
+    overflow: hidden;
+    list-style-type: none;
+    text-align: right;
+    text-decoration: none;
+   font-size: 110%;
+   font-family: arial, sans-serif;
+  }
+  
+  .topnav a {
+  display: flexbox;
+  color: #ffffff;
+    padding: 1em 1em;
+    text-decoration: none;
+    font-size: 120%;
+    display: inline-block;
+  }
+  li a {
+    transition: 80ms;
+  }
+
+li a:hover{ 
+  transform: scale(1.2);
+  }
+  main{
+    display: flex;
+    justify-content: space-between;
+  }
+  main img {
+    border-radius: 6%;
+  }
+
+h1 {
+  color: #b03056;
+  font-size: 200%;
+  padding-left: 0.4em;
+}
+  
+  h3 {
+    padding-left: 0.8em;
+  }
+  .quote{
+    width: 100%;
+  }
+  
+  blockquote {
+    display: block;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 200%; 
+    color: #b03056;
+    text-align: right; 
+    margin-right: 2em;
+    padding: 0em;
+  }
+
+  .box {
+    overflow: hidden;
+    width: 100%;
+    max-width: 20%;
+  }
+
+  .description {
+    font-size: 120%;
+   
+  }
+  iframe {
+    border-radius: 6%;
+  margin-top: 4em;
+  margin-right: 2em;
+  }
+
+  .button {
+    margin-left: 0.5em;
+    display: inline-flex;
+    background-color: transparent;
+    border: 0.13em solid #b03056; 
+    color: #b03056; 
+    padding: 0.5em 0.5em;
+    font-size: 200%;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 1em;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.button:hover {
+    background-color: #b03056; 
+    color: white; 
+}
+.thumbnails img {
+margin: 1em;
+transition: 100ms;
+}
+
+.thumbnails img:hover {
+  transform: scale(1.05);
+  }
+.commentary {
+  font-size: 120%;
+  line-height: 2em;
+}
+
+.about {
+  text-align: left;
+  font-size: 120%;
+  line-height: 1.5em;
+  padding-right: 7em;
+}
+
+.about p {
+  margin-left: 0.7em;
+}
+.gif2{
+  height: 100%;
+  align-self: flex-end;  
+}
+
+footer {
+ margin-top: 2em;
+ margin-left: 2em;
+ color: #f6d8e1;
+ opacity: 70%;
+}
+
+
