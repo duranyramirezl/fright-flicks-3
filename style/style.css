@@ -1,3 +1,4 @@
+/* General */
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #0c0c0e;
@@ -7,16 +8,15 @@ body {
   box-sizing: border-box;
 }
 
-
 body,
 header,
 footer,
 main {
-  margin: 20px;
+  margin: 1.3em;
   max-width: 90em;
 }
 
-
+/* Header and Footer */
 header,
 footer {
   display: flex;
@@ -25,133 +25,9 @@ footer {
   padding: 1em 0;
 }
 
-
-.logo img {
-  transition: filter 0.3s ease-in-out;
-}
-
-.logo img:hover {
-  filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.8));
-}
-
-
-.topnav {
-  overflow: hidden;
-  list-style-type: none;
-  text-align: right;
-  text-decoration: none;
-  display: flex;
-  gap: 1em;
-}
-
-.topnav a {
-  color: #ffffff;
-  padding: 1em 1em;
-  text-decoration: none;
-  font-size: 1.2em;
-  transition: transform 80ms ease-in-out, color 0.3s ease;
-}
-
-.topnav a:hover {
-  color: #c24168; 
-}
-
-.topnav a.active {
-  color: #c24168; 
-  font-weight: bold; 
-}
-
-
-main {
-  display: flex;
-  flex-direction: row;
-  gap: 2em;
-  padding: 1em;
-}
-
 header {
   border-bottom: 1px solid #b03056;
 }
-
-
-.gif2 img {
-  transition: transform 200ms ease-in-out;
-  width: 900px;
-}
-
-.gif2 img:hover {
-  transform: scale(1.05);
-  filter: drop-shadow(0 0 16px rgba(178, 255, 245, 0.8));
-}
-
-.quote {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1em;
-  flex-wrap: wrap;
-  margin: 2em auto;
-}
-
-blockquote {
-  display: inline-block;
-  font-style: italic;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 1.5em;
-  color: #b03056;
-  padding: 2em;
-  margin: 0;
-  line-height: 1.4em;
-}
-
-.home-thumbnail {
-  width: 450px;
-}
-
-.box {
-  width: auto;
-  flex: 1;
-}
-
-
-.episode .commentary {
-  flex: 1;
-  font-size: 1.2em;
-  line-height: 1.8em;
-}
-
-
-main img {
-  border-radius: 6%;
-  max-width: 100%;
-  height: auto;
-}
-
-
-h1 {
-  color: #b03056;
-  font-size: 2em;
-  margin-bottom: 0.8em;
-}
-
-h3 {
-  font-size: 1.5em;
-  margin-top: 0;
-}
-
-.box p {
-  font-size: 1.15em;
-}
-
-
-.about {
-  text-align: left;
-  font-size: 1.2em;
-  line-height: 1.8em;
-  padding-right: 5em;
-}
-
-
 
 footer {
   margin-top: 2em;
@@ -161,13 +37,62 @@ footer {
   text-align: center;
 }
 
+/* Logo */
+.logo img {
+  transition: filter 0.3s ease-in-out;
+}
 
+.logo img:hover {
+  filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.8));
+}
+
+/* Navigation */
+.topnav {
+  overflow: hidden;
+  list-style-type: none;
+  text-align: right;
+  display: flex;
+  gap: 1em;
+}
+
+.topnav a {
+  color: #ffffff;
+  padding: 1em;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: transform 80ms ease-in-out, color 0.3s ease;
+}
+
+.topnav a:hover {
+  color: #c24168;
+}
+
+.topnav a.active {
+  color: #c24168;
+}
+
+/* Main Content */
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  padding: 1em;
+}
+
+main img {
+  border-radius: 6%;
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Button */
 .button {
   display: inline-flex;
   background-color: transparent;
   border: 0.13em solid #b03056;
   color: #b03056;
-  padding: 0.8em 0.8em;
+  padding: 0.8em;
   font-size: 1.2em;
   font-weight: bold;
   text-align: center;
@@ -181,7 +106,30 @@ footer {
   color: white;
 }
 
+/* Headings */
+h1 {
+  color: #b03056;
+  font-size: 2em;
+  margin-bottom: 0.8em;
+}
 
+h3 {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+/* Episodes Section */
+
+.episodes {
+  text-align: left;
+  line-height: 1.8em;
+}
+
+.episodes h1 {
+  font-size: 2.4em;
+}
+
+/* Thumbnails */
 .thumbnails {
   display: flex;
   flex-wrap: wrap;
@@ -199,10 +147,55 @@ footer {
   transform: scale(1.05);
 }
 
+/* About Section */
+.about {
+  text-align: left;
+  font-size: 1.2em;
+  line-height: 1.8em;
+  padding-right: 5em;
+}
 
+blockquote {
+  display: inline-block;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5em;
+  color: #b03056;
+  padding: 2em;
+  margin: 0;
+  line-height: 1.4em;
+}
 
+.quote {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  flex-wrap: wrap;
+  margin: 2em auto;
+}
 
-/* Merch Header */
+/* Home Page Thumbnail */
+.home-thumbnail {
+  width: 450px;
+}
+
+.box {
+  width: auto;
+  flex: 1;
+}
+
+.box p {
+  font-size: 1.15em;
+}
+
+.episode .commentary {
+  flex: 1;
+  font-size: 1.2em;
+  line-height: 1.8em;
+}
+
+/* Merch Page */
 .merch-header {
   text-align: center;
   margin-bottom: 2em;
@@ -228,7 +221,7 @@ footer {
   text-align: center;
   margin: 0 auto;
   padding: 2em;
-  max-width: 1200px;/
+  max-width: 1200px;
 }
 
 .merch-items div {
@@ -260,21 +253,27 @@ footer {
   margin-top: 0.3em;
 }
 
-/* Page Centering aahhhh */
 .merch {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   text-align: center;
   margin: 0 auto;
 }
 
+/* Teaser */
+.gif2 img {
+  transition: transform 200ms ease-in-out;
+  width: 900px;
+}
 
+.gif2 img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 16px rgba(178, 255, 245, 0.8));
+}
 
-/* An attempt: Mobile code */
-
+/* Mobile code? An attempt. */
 @media (max-width: 768px) {
 
   header,
@@ -287,6 +286,10 @@ footer {
 
   main {
     flex-direction: column;
+  }
+
+  .logo img {
+    width: 100%;
   }
 
   .topnav {
@@ -305,6 +308,10 @@ footer {
     text-align: left;
   }
 
+  .home-thumbnail {
+    width: 100%;
+  }
+
   .episode {
     flex-direction: column;
   }
@@ -313,7 +320,13 @@ footer {
     max-width: 100%;
   }
 
+  .video iframe {
+    width: 100%;
+    height: auto;
+  }
+
   .about {
-    padding-right: 1em;
+    padding-right: 0;
+    width: 100%;
   }
 }
